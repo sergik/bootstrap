@@ -179,6 +179,7 @@ angular.module('ui.bootstrap.carousel', [])
       } else {
         self.select(slides[index]);
       }
+      $scope.$currentTransition = null;
     } else if (currentIndex > index) {
       currentIndex--;
     }
